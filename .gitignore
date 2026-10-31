@@ -1,0 +1,7 @@
+# Salidas de compilacion
+bin/
+obj/
+publish/
+*.user
+.vs/
+Thumbs.db

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>RecoWav</AssemblyName>
+    <!-- Sin .exe propio: se ejecuta con "dotnet RecoWav.dll" (dotnet.exe está firmado por Microsoft),
+         lo que evita falsos positivos de antivirus con ejecutables sin firmar. -->
+    <UseAppHost>false</UseAppHost>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="3.1.0" />
+  </ItemGroup>
+
+</Project>
